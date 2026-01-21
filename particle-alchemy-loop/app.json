@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Particle Alchemy Loop",
+    "slug": "particle-alchemy-loop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "particle-alchemy",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#111921"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.particlealchemy.loop"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#111921"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.particlealchemy.loop"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
