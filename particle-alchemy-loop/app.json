@@ -6,7 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "newArchEnabled": true,
     "scheme": "particle-alchemy",
     "splash": {
       "image": "./assets/splash-icon.png",
@@ -22,7 +21,6 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#111921"
       },
-      "edgeToEdgeEnabled": true,
       "package": "com.particlealchemy.loop"
     },
     "web": {
@@ -31,9 +29,6 @@
     },
     "plugins": [
       "expo-router"
-    ],
-    "experiments": {
-      "typedRoutes": true
-    }
+    ]
   }
 }
