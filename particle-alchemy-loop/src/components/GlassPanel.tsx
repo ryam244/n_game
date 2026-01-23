@@ -1,35 +1,18 @@
-// src/components/GlassPanel.tsx
 // Glass morphism panel component
-
 import React from 'react';
 import { View, StyleSheet, ViewStyle } from 'react-native';
 import { colors, borderRadius as br } from '../theme';
 
-interface GlassPanelProps {
+interface Props {
   children: React.ReactNode;
   style?: ViewStyle;
   borderRadius?: number;
   padding?: number;
 }
 
-export const GlassPanel: React.FC<GlassPanelProps> = ({
-  children,
-  style,
-  borderRadius = br.xl,
-  padding = 0,
-}) => {
-  return (
-    <View
-      style={[
-        styles.container,
-        { borderRadius, padding },
-        style,
-      ]}
-    >
-      {children}
-    </View>
-  );
-};
+export const GlassPanel: React.FC<Props> = ({ children, style, borderRadius = br.xl, padding = 0 }) => (
+  <View style={[styles.container, { borderRadius, padding }, style]}>{children}</View>
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -38,5 +21,3 @@ const styles = StyleSheet.create({
     borderColor: colors.glassBorder,
   },
 });
-
-export default GlassPanel;
